@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Мои Скриншоты</title>
+	<style>
+		div{
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+   <form action="/"> <!--Тег для использования формы-->
+	   <input type="text" name="first_name" id="first_name" placeholder="Логин..."><!--Тег для ввода Текста-->
+	   <input type="text" name="first_name" id="first_name" placeholder="Введите сообщение">
+	   <!--подсказка в поле для заполнения-->
+	   <input type="email" name="email" id="first_name" required><!--Обязательное поле, неотправит без него-->
+	   <input type="password" name="password" id="password"><!--Тег для ввода Пароля-->
+     <div>
+		 <p>Профессия</p> <!--Надпись над чекбоксом-->
+	 </div>
+	   <div><!--Так как внизу идут строчные элементы, их необходимо оборачивать в div
+	            Так они не будут идти в одну строку-->
+		   <input type="checkbox" id="student"><!--Создаём Чекбокс-->
+	       <span>Студент</span><!--что выберает чекбокс-->
+	   </div>
+	   <div>
+		   <input type="checkbox" id="worker"><!--Создаём Чекбокс-->
+		   <span>Работник</span><!--что выберает чекбокс-->
+	   </div>
+	   <div>
+	       <input type="checkbox" id="school"><!--Создаём Чекбокс-->
+	       <label for="school">Школьник</label><!--Для возможности отмечать чекбокс кликая на название-->
+	       <input type="checkbox" id="child"><!--Создаём Чекбокс-->
+	       <label for="child">Ребёнок</label><!--Для возможности отмечать чекбокс кликая на название-->
+	   </div>
+	   <div>
+		   <p>Пол</p>
+		   <label><!--создаём круглый чекбокс, из группы радио баттонов,можно выбрать только один чекбоксов-->
+		   <input type="radio" name="Male">
+		    Мужчина
+		   </label>
+		   <label>
+			   <input type="radio" name="Male">
+			Женщина
+		   </label>
+		   <label>
+			   <input type="radio" name="Male">
+			Ребёнок
+		   </label>
+	   </div>
+	   <div>
+		   <input type="file" name="file"><!--Создаём инпут загрузить с ПК-->
+		   <!--Можно стилезировать, только через наложенную картинку,
+		    а сам инпут стоит с нулевой прозрачностью под или над картинкой-->
+	   </div>
+	   <div>
+		   <input type="reset" value="Сброс всех полей"> <!--для сброса всех заполненых в форме полей-->
+	   </div>
+	   <div>
+		   <textarea name="" id="" cols="30" rows="10"></textarea>
+		   <!--Создаёт большое поле для коментариев, которые будут отправляться
+		       Заблокировать можно при помощи максимальной высоты и ширины-->
+	   </div>
+	   <div>
+		   <select name="" id=""><!--Выпадающий список-->
+			   <option value="30">30</option>
+			   <option value="31">31</option>
+			   <option value="32">32</option>
+		   </select>
+	   </div>
+	   <div>
+		   <select name="" id=""><!--Выпадающий список с подгруппами или категориями-->
+			   <optgroup label="от 12 до 14">
+				   <option value="12">12</option>
+				   <option value="13">13</option>
+				   <option value="14">14</option>
+			   </optgroup>
+			   <optgroup label="от A до C">
+			   <option value="A">A</option>
+			   <option value="B">B</option>
+			   <option value="C">C</option>
+			   </optgroup>
+		   </select>
+	   </div>
+	   <div>
+		   <input type="submit" value="Отправить"><!--Создаём кнопку отправить-->
+	   </div>
+   </form>
+</body>
+</html>

@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.wrapper{
+
+}
+.header{
+	height: 100px;
+	background: gray;
+}
+
+.conteiner{
+	position: relative;/*т.к. блоки плавающиея внутри контейнера, границы нужно зачищать*/
+	overflow: hidden;
+}
+
+.box{
+	float: left;
+	width: 29%;
+	margin: 20px 2%;
+	height: 100px;
+	background: green;
+	border: 20px solid black;/* толстая рамка вокруг блоков*/
+	box-sizing: border-box; /*Изменяет нашу блочную модель, бордер входит во внутреннюю часть блока*/
+}
+
+
+
+
+@media (max-width: 1000px) /*Указываем диапазон ширины экрана,
+в котором будут работать определённые css cdjqcndf*/
+{
+.box {
+	width: 46%;/*указываем ширину блока на экране 1000px и меньше*/
+}
+}
+@media (max-width: 500px) /*Указываем диапазон ширины экрана,
+в котором будут работать определённые css свойства*/
+{
+	.box {
+		width: 96%;/*указываем ширину блока на экране 500px и меньше*/
+	}
+}
+
+
+
+.footer{
+	clear: both;/*Зачищаем границы у плавающих блоков*/
+	height: 100px;
+	background: black;
+	color: white;
+}

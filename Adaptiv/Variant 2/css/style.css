@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.wrapper{
+
+}
+.header{
+	height: 100px;
+	background: gray;
+}
+.conteiner{ /*оборачиваем sitebar и content в div conteiner*/
+	position: relative;/*необходимо задать относительное позиционирование элемента*/
+	overflow: hidden;/*зачищаем внутренние границы элемента*/
+}
+.sidebar{
+	width: 300px;/*Фиксированная ширина для Сайтбара*/
+	position: absolute; /*необходимо задать абсолютное позиционирование элемента, чтобы другие элементы его не чувствовали*/
+	background: yellow;
+	top: 0;
+	left: 0;
+
+}
+.content{
+	float: right;/*Прижать блок к правой стороне*/
+	/*width: 70%;/*Проценты используются для резиновой верстки*//*удаляем, что бы блок растянулся на всю ширину*/
+	background: green;
+	margin-left: 300px;/*что бы этот блок не подлазил под левый блок*/
+}
+.footer{
+	clear: both;/*Зачищаем границы у плавающих блоков*/
+	height: 100px;
+	background: black;
+	color: white;
+}

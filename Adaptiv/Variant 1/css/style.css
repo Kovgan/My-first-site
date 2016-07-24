@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.wrapper{
+
+}
+.header{
+	height: 100px;
+	background: gray;
+}
+.sidebar{
+	float: left;/*Прижать блок к левой стороне*/
+	width: 30%;/*Проценты используются для резиновой верстки*/
+	background: yellow;
+}
+.content{
+	float: right;/*Прижать блок к правой стороне*/
+	width: 70%;/*Проценты используются для резиновой верстки*/
+	background: green;
+}
+.footer{
+	clear: both;/*Зачищаем границы у плавающих блоков*/
+	height: 100px;
+	background: black;
+	color: white;
+}
